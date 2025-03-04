@@ -14,3 +14,10 @@ function topFunction() {
 document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 }
+
+//Get current year
+window.onload = function () {
+    var d = new Date();
+    document.getElementById("copyright").innerHTML = d.getFullYear();
+    
+}
