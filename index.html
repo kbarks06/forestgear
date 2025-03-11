@@ -10,6 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+        });
+    </script>
+
+
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="styles/main.css">
 
@@ -21,6 +33,8 @@
         <section class="hero">
             <header>
                 <img src="images/logo.png" alt="Homepage" title="Homepage" class="logoimage">
+                
+                <nav id="mobilemenu"></nav>
                 <nav id="nav_menu">
                     <ul>
                         <li><a href="index.html">Home</a></li>
